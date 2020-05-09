@@ -11,7 +11,7 @@ namespace DogGroomingApiF.Controllers
     [RoutePrefix("api/Client")]
     public class ClientController : ApiController
     {
-        List<Client> clients = new List<Client>();
+        List<Client> clients = new List<Client>(); 
         List<Service> serv = new List<Service>();
         ClientController() : base()
         {
@@ -26,7 +26,7 @@ namespace DogGroomingApiF.Controllers
             serv.Add(S2);
         }
 
-        // GET: api/Client/1
+        // GET: api/Client/1       // get all client services
         public List<Service> Get()
         {
             return serv;
